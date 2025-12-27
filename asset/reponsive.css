@@ -1,0 +1,356 @@
+/* ---PC --- */
+@media (min-width: 992px) {
+.menu-mobile{
+    display: none;
+}
+
+}
+/*  tablet and mobile */
+@media (max-width: 991.98px){
+    .header .action{
+        margin-left: auto ;
+    margin-right: 0px;
+    }
+    /* 1. ẩn thanh Nav */
+.nav{
+    display: none;
+}
+/* 2. Căn giữa logo */
+.header-top{
+    position: relative;
+}
+.header__logo{
+    position: absolute;
+    left: 50%;
+    translate: -50% -50%;
+}
+/* 3. thêm icon menu */
+.menu-mobile__icon{
+    position: absolute;
+    top: 38px;
+    left: 26px;
+    color: #fff;
+    width: 24px;
+}
+/* 4. overlay */
+.menu__overlay{
+    position: fixed;
+    background: rgba(0, 0, 0, 0.3);
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+.menu-checked:checked ~ .menu__overlay{
+    opacity: 1;
+    visibility: visible;
+}
+/* 5. menu-drawer */
+.menu__drawer{
+    position: fixed;
+    background: #ba6f6f;
+    inset: 0 40% 0 0;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 2;
+    transition: 0.8s;
+    translate: -100%;
+    padding: 60px;
+}
+.menu-checked:checked ~ .menu__drawer{
+    opacity: 1;
+    visibility: visible;
+    translate: 0;
+}
+.menu__drawer-icon{
+    width: 50px;
+    color: #fff;
+}
+.menu__drawer-top .logo{
+    width: 100px;
+}
+.menu__drawer-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#nav__list--mobile{
+    margin-top: 25px;
+}
+.nav__link{
+    display: block;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+.menu__drawer .nav__link:hover,
+ .menu__drawer .nav__link--active{
+    text-shadow: 1px 0px 0px currentColor;
+    color: #fff;
+    /* display: flex; */
+    align-items: center;
+    background: #00ffff37;
+}
+.menu__drawer .nav__link--active::before{
+    content: "";
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+    display: inline-block;
+    margin-right: 8px;
+}
+/* hero */
+.hero{
+    flex-direction: column-reverse;
+    row-gap: 50px;
+}
+.hero__left{
+    width: 80%;
+    text-align: center;
+    margin: 22px auto;
+}
+.hero__action{
+    justify-content: center;
+}
+/* service */
+.service__row{
+   flex-direction: column;
+}
+.secvice__img{
+    width: 95vw;
+}
+.service__content{
+    margin: 20px 0px 0px;
+    text-align: center;
+   
+}
+.service__item{
+    width: 90vw;
+    margin: 0px auto 0px;
+    text-align: left;
+}
+/* worK */
+.work__row{
+   flex-direction: column;
+  row-gap: 30px;
+    
+}
+/* about */
+.about__body{
+    flex-direction: column;
+    row-gap: 150px;
+}
+.about__img-small{
+    display: none;
+}
+.about__img-large{
+    width: 90vw;
+    border-radius: 15px;
+    margin: 25px auto;
+}
+.about__media{
+    width: 100%;
+  }
+  .about__content {
+    width: 100%;
+    text-align: center;
+}
+.about__content .section-desc{
+   
+    text-align: center;
+}
+/* team */
+.team__list {
+    
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 15px;
+    row-gap: 10px;
+}
+.team__img {
+    width: 350px;
+  }
+  .mobile__img {
+    display: none;
+}
+/* blog */
+.blog__body{
+    flex-direction: column-reverse;
+    row-gap: 30px;
+}
+.blog__left {
+    width: 100%;
+    text-align: center;
+}
+.blog .section-heading {
+    max-width: 100%;
+}
+.blog__left .button{
+    justify-content: center;
+}
+.blog__right {
+    
+    width: 100%;
+    column-gap: 10px;
+}
+.blog__item{
+    text-align: center;
+    max-width: 100%;
+}
+.blog__item .section-desc {
+   
+    /* text-align: center; */
+}
+.blog__img {
+    width: 288px;
+    
+}
+.blog__item-content{
+    max-width: 288px;
+    text-align: left;
+    margin: 10px auto;
+}
+
+  /* dduooi */
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* foooter */
+.footer__logo{
+    display: none;
+}
+.footer__body {
+   
+    grid-template-columns: 0.5fr 0.5fr 1fr;
+   
+}
+.nav__link-moblie{
+    display: none;
+  }
+}
+/*  moblile */
+@media (max-width: 767.98px ){
+    /* menu drawer */
+.header .action{
+    display: none;
+}
+.menu-mobile__icon {
+   
+    top: 21px;
+    left: 10px;
+    
+}
+.them:before{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    display: block;
+    top: -15px;
+    position: relative;
+  }
+  .them{
+    margin-top: 10px;
+  }
+  .menu__drawer {
+    inset: 0 20% 0 0;
+    padding: 10px;
+}
+/* hero */
+.hero__img-small {
+    display: none;
+}
+.hero__img-lage{
+    width: 90vw;
+    height: auto;
+}
+.hero__left{
+    width: 90vw;
+    
+}
+.hero__heading{
+    font-size: 3rem;
+}
+.hero__action {
+    flex-direction: column;
+    row-gap: 20px;
+}
+/* service */
+.service{
+    padding: 50px 0px 0px 0px;
+  }
+  .service__row {
+       margin-top: 40px;
+    }
+    .secvice__img {
+               height: auto;
+            }
+    .service__content .btn {
+        margin: 55px 0px;
+    }
+    .work .work__title {
+        width: 100%;
+        
+    }
+    /* about */
+    .about{
+        margin-top: 0;
+        padding: 85px 0px 0px;
+    }
+    .about__body {
+                row-gap: 70px;
+    }
+    /* team */
+    .team__list {
+        grid-template-columns: repeat(1, 1fr);
+       row-gap: 30px;
+    }
+    /* mobile */
+    .mobile{
+        margin-top: 0;
+    }
+    .mobile__body{
+        padding: 0px 20px 40px;
+        height: auto;
+        width: 90vw;
+    }
+    .mobile .section-heading {
+        width: 90%;
+     margin-top: 70px;
+    }
+    .mobile .section-desc {
+        max-width: 90%;
+    }
+    .media__icon {
+        width: 125px;
+    }
+    /* blog */
+    .blog__right {
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 30px;
+    }
+    .blog__img{
+        width: 100%;
+    }
+    .blog__body{
+        padding: 10px 0px;
+    }
+    /* welcom */
+    .welcome__body {
+        padding: 10px 0px;
+       
+    }
+    /* footer */
+    .footer{
+        margin-top: 50px;
+    }
+    .footer__body{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .copy-right{
+        margin-top: 20px;
+    }
+}
+/* an phan thua */
